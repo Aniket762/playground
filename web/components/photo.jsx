@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
+import Btn from "./button";
+import styles from '../styles/Photo.module.css';
 
 class Photo extends Component {
   state = {
@@ -58,9 +60,10 @@ class Photo extends Component {
   render() {
     return (
       <div>
-        <div>
-          <input type="file" onChange={this.onFileChange} name="photo" />
-          <button onClick={this.onFileUpload}>Upload!</button>
+        <div className={styles.frc}>
+          <label className={styles.label_styles} htmlFor='code-file'>Choose File </label> 
+          <input id='code-file' className={styles.input_styles} type="file" onChange={this.onFileChange} name="photo" />
+          <Btn darkText={true} onClick={this.onFileUpload}> 🦄 Upload!</Btn>
         </div>
         {this.fileData()}
       </div>

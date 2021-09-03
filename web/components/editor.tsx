@@ -60,7 +60,7 @@ const Editor = () => {
             <br />
             <textarea className={styles.input_area} value={code} onChange={e => setCode(e.target.value)}></textarea>
             <br />
-            <Btn darkText={true} handleClick={handleSubmit}>Submit</Btn>
+            <Btn darkText={true} handleClick={handleSubmit}> 🐥 Submit</Btn>
             <h4>{output}</h4>
         </div>
     )
