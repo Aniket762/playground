@@ -1,0 +1,9 @@
+.main {
+     color: #fff;
+}
+
+.input_area {
+    height: 50vh;
+    width: 85vw;
+    background-color: var(--bg-light);
+}  

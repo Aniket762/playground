@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Editor.module.css'
 import axios from 'axios'
 
 const Editor = () => {
@@ -46,6 +46,7 @@ const Editor = () => {
             <div>
                 <select
                     value={lang}
+                    className={styles.lang_selector}
                     onChange={e => {
                         setLang(e.target.value)
                         console.log(e.target.value)
@@ -56,7 +57,7 @@ const Editor = () => {
                 </select>
             </div>
             <br />
-            <textarea style={{ height: '20rem', width: '30rem' }} value={code} onChange={e => setCode(e.target.value)}></textarea>
+            <textarea className={styles.input_area} value={code} onChange={e => setCode(e.target.value)}></textarea>
             <br />
             <button onClick={handleSubmit}>Submit</button>
             <h4>{output}</h4>
