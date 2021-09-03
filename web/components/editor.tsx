@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/Editor.module.css'
 import axios from 'axios'
+import Btn from './button'
 
 const Editor = () => {
     const [code, setCode] = useState('')
@@ -59,7 +60,7 @@ const Editor = () => {
             <br />
             <textarea className={styles.input_area} value={code} onChange={e => setCode(e.target.value)}></textarea>
             <br />
-            <button onClick={handleSubmit}>Submit</button>
+            <Btn darkText={true} handleClick={handleSubmit}>Submit</Btn>
             <h4>{output}</h4>
         </div>
     )

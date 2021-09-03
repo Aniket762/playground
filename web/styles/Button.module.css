@@ -1,0 +1,19 @@
+.btn {
+    padding: 0.6em;
+    margin-top: 0.8em;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.success {
+    background-color: var(--success-color);
+}
+
+.text_dark {
+    color: var(--text-primary);
+}
+
+.light_text {
+    color: #fff;
+}
