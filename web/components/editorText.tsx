@@ -1,7 +1,14 @@
 import React from 'react'
 
+interface PropChild {
+    mode: string;
+}
 
-const EditorText = ({props}: any) => {
+interface Props {
+    props: PropChild;
+}
+
+const EditorText: React.FC<Props> = ({props}) => {
     if (typeof window !== 'undefined') {
         const Ace = require('react-ace').default;
         require('ace-builds/src-noconflict/mode-c_cpp')

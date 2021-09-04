@@ -4,12 +4,13 @@ import axios from 'axios'
 import Btn from './button'
 import {useTheme} from './themeProvider'
 import EditorText from './editorText'
+import langModeMapper from '../utils/langModeMapper'
 
 
 const Editor = () => {
     const [code, setCode] = useState('')
     const [output, setOutput] = useState('')
-    const [lang, setLang] = useState('cpp')
+    const [lang, setLang] = useState<string>('cpp')
     const {theme, setTheme} = useTheme()
 
     useEffect(() => {
@@ -56,9 +57,12 @@ const Editor = () => {
                     ToggleDark
                 </Btn> */}
 
-                <div className={styles.editor}>
+                <div className = {styles.editor}>
                     <EditorText
-                        props = {{mode : "c_cpp"}}
+                        props = {{
+                            mode : langModeMapper[lang],
+                            
+                        }}
                     />
                 </div>
                 
