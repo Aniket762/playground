@@ -5,7 +5,7 @@ const detectText = async fileName => {
     // Creates a client
     const client = new vision.ImageAnnotatorClient({
         // add API Key json file here from gcp
-        // keyFilename: __dirname + '/APIKey.json',
+        //  keyFilename: __dirname + '/APIKey.json',
     })
 
     // Performs text detection on the local file
