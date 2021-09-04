@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styles from '../styles/Editor.module.css'
 import axios from 'axios'
 import Btn from './button'
@@ -50,12 +50,12 @@ const Editor = () => {
     return (
         <div className={styles.main}>
             <div>
-                {/* <Btn 
+                <Btn 
                     handleClick = {() => setTheme(theme === "dark" ? "light": "dark")}
                     darkText={false} 
                 >
                     ToggleDark
-                </Btn> */}
+                </Btn>
 
                 <div className = {styles.editor}>
                     <EditorText
@@ -63,7 +63,9 @@ const Editor = () => {
                             mode : langModeMapper[lang],
                             
                         }}
-                    />
+                        code={code}
+                        setCode={setCode}
+                    />  
                 </div>
                 
                 <br/>

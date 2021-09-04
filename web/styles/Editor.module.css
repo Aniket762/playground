@@ -10,7 +10,12 @@
 
 .editor {
     width: 95vw;
-    overflow: scroll;
+}
+
+@media screen and (min-width: 720px) {
+    .editor {
+        width: 70vw;
+    }
 }
 
 .input_area:focus {

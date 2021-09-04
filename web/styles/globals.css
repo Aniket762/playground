@@ -27,3 +27,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.ace_editor {
+  border: 1px solid lightgray;
+  margin: auto;
+  width: 80%;
+}
+.scrollmargin {
+  height: 80px;
+      text-align: center;
+}
