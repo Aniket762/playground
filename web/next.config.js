@@ -6,4 +6,5 @@ module.exports = withPWA({
         register: true,
         skipWaiting: true,
     },
+    reactStrictMode: true,
 })
