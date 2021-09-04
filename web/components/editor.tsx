@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import styles from '../styles/Editor.module.css'
 import axios from 'axios'
 import Btn from './button'
-import {useTheme} from './themeProvider'
+import { useTheme } from './themeProvider'
 import EditorText from './editorText'
 import langModeMapper from '../utils/langModeMapper'
 
@@ -10,8 +10,8 @@ import langModeMapper from '../utils/langModeMapper'
 const Editor = () => {
     const [code, setCode] = useState('')
     const [output, setOutput] = useState('')
-    const [lang, setLang] = useState<string>('cpp')
-    const {theme, setTheme} = useTheme()
+    const [lang, setLang] = useState('cpp')
+    const { theme, setTheme } = useTheme()
 
     useEffect(() => {
         try {
@@ -84,7 +84,10 @@ const Editor = () => {
             <br />
 
             <br />
-            <Btn darkText={true} handleClick={handleSubmit}> 🐥 Submit</Btn>
+            <Btn darkText={true} handleClick={handleSubmit}>
+                {' '}
+                🐥 Submit
+            </Btn>
             <h4>{output}</h4>
         </div>
     )
