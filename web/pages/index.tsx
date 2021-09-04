@@ -6,6 +6,9 @@ import styles from '../styles/Home.module.css'
 import Photo from '../components/photo'
 import { ThemeProvider } from '../components/themeProvider'
 import Header from '../components/header'
+import AwesomeHeading from '../components/awesomeHeading'
+import sectionData from '../utils/sectionData'
+import Questions from '../components/questions'
 
 const Home: NextPage = () => {
     return (
@@ -20,15 +23,22 @@ const Home: NextPage = () => {
             </Head>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Playground 🐣 </h1>
         <ThemeProvider>
+          <AwesomeHeading 
+            heading={sectionData.coditor.heading} 
+            description={sectionData.coditor.description} 
+          />
           <Editor />
-          <Photo/>
+          <AwesomeHeading 
+            heading={sectionData.questions.heading} 
+            description={sectionData.questions.description} 
+          />
+          <Questions />
         </ThemeProvider>
       </main>
       
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +47,8 @@ const Home: NextPage = () => {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </a> */}
+        made with &#heart; by
       </footer>
     </div>
   );
