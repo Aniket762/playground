@@ -1,14 +1,10 @@
-.main {
-     color: #fff;
-}
-
 .input_area {
     height: 50vh;
     width: 85vw;
     padding: 1.1em;
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--bg-light);
-    border: 1px solid var(--bg-darker);
+    background-color: var(--bg-2);
+    border: 1px solid var(--bg-3);
     border-radius: 0.3em;
 }
 

@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/Editor.module.css'
 import axios from 'axios'
 import Btn from './button'
+// import '../utils/toggle'
+import { useTheme } from './themeProvider'
 
 const Editor = () => {
     const [code, setCode] = useState('')
     const [output, setOutput] = useState('')
     const [lang, setLang] = useState('cpp')
+    const { theme, setTheme } = useTheme()
 
     useEffect(() => {
         try {
@@ -45,6 +48,11 @@ const Editor = () => {
     return (
         <div className={styles.main}>
             <div>
+                <h1>{theme}</h1>
+                <Btn handleClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} darkText={false}>
+                    ToggleDark
+                </Btn>
+                <br />
                 <select
                     value={lang}
                     className={styles.lang_selector}
@@ -60,7 +68,10 @@ const Editor = () => {
             <br />
             <textarea className={styles.input_area} value={code} onChange={e => setCode(e.target.value)}></textarea>
             <br />
-            <Btn darkText={true} handleClick={handleSubmit}> 🐥 Submit</Btn>
+            <Btn darkText={true} handleClick={handleSubmit}>
+                {' '}
+                🐥 Submit
+            </Btn>
             <h4>{output}</h4>
         </div>
     )

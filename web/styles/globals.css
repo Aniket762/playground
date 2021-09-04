@@ -11,10 +11,9 @@ body {
 :root {
   --primary-color : #3F5CC2;
   --success-color : #3FC27C;
-  --danger-color : #fff;
-  --bg-light : #ECECEC;
-  --bg-darker: #E4E4E4;
-  --bg-primary: #fff;
+  --bg-2 : #ECECEC;
+  --bg-3: #E4E4E4;
+  --bg-1: #fff;
   --text-primary: #171717;
   --text-invert: #DEDEDE;
 }
