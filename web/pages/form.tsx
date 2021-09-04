@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Grid, TextField, Button } from '@material-ui/core'
 import MainFrame from '../../assets/playground-mainframe.webp'
 import Logo from '../../assets/playground-logo.png'
+import axios from 'axios'
 
 const Form: React.FC = () => {
+    const handleSubmit = async () => {
+        const payload = JSON.stringify({
+            title: title,
+            message: message,
+        })
+
+        try {
+            const { data } = await axios.post('http://localhost:8080/api/questions', payload, {
+                headers: { 'Content-Type': 'application/json' },
+            })
+        } catch ({ err }) {
+            console.log(err)
+        }
+    }
+
+    const [title, setTitle] = useState('')
+    const [message, setMessgae] = useState('')
+
     return (
         <div>
             <Grid container style={{ minHeight: '100vh' }}>
@@ -31,9 +50,9 @@ const Form: React.FC = () => {
                             />
                         </Grid>
 
-                        <TextField label="Title" margin="normal" />
-                        <TextField label="Descp" margin="normal" />
-                        <Button color="primary" variant="contained">
+                        <TextField label="Title" margin="normal" type="string" onChange={e => setTitle(e.target.value)} />
+                        <TextField label="Descp" margin="normal" type="string" onChange={e => setMessgae(e.target.value)} />
+                        <Button color="primary" variant="contained" onSubmit={handleSubmit}>
                             Submit
                         </Button>
                     </div>
