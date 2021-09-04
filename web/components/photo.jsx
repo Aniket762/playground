@@ -49,25 +49,28 @@ class Photo extends Component {
       );
     } else {
       return (
-        <div>
-          <br />
-          <h4>Choose before Pressing the Upload button</h4>
-        </div>
+        'Choose before Pressing the Upload button'
       );
     }
   };
 
   render() {
-    return (
-      <div>
-        <div className={styles.frc}>
+    return (<>
+      <div className={styles.action_area}>
+        <div>
           <label className={styles.label_styles} htmlFor='code-file'>Choose File </label> 
           <input id='code-file' className={styles.input_styles} type="file" onChange={this.onFileChange} name="photo" />
           <Btn darkText={true} onClick={this.onFileUpload}> 🦄 Upload!</Btn>
         </div>
-        {this.fileData()}
+        <Btn darkText={true} handleClick={this.props.handleSubmit}>
+          {' '}
+          🐥 Submit
+        </Btn>
       </div>
-    );
+      <p className='description mt1'>
+        {this.fileData()}
+      </p>
+    </>);
   }
 }
 

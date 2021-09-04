@@ -18,3 +18,9 @@
 .input_styles {
     display: none;
 }
+
+.action_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

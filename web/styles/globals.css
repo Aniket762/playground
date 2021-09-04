@@ -8,6 +8,12 @@
   --text-invert: #DEDEDE;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-size: 16px;
@@ -57,4 +63,32 @@ header {
 #logo {
   font-size: 1.4em;
   font-weight: 600;
+}
+
+#awesome-editor {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.description {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.mt1 {
+  margin-top: 1em;
+}
+
+.mt2 {
+  margin-top: 2em;
+}
+
+.xxl {
+  font-size: 3.5em;
 }
