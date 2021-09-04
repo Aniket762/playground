@@ -18,6 +18,10 @@ body {
     text-align: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -35,4 +39,22 @@ a {
 .scrollmargin {
   height: 80px;
       text-align: center;
+}
+
+header {
+  width: 90%;
+}
+
+.fr {
+  display: flex;
+  flex-direction: row;
+}
+
+.ml1 {
+  margin-left: 1em;
+}
+
+#logo {
+  font-size: 1.4em;
+  font-weight: 600;
 }

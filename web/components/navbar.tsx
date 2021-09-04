@@ -1,13 +1,15 @@
 import React from 'react'
+import styles from '../styles/Header.module.css';
 
 const Navbar = () => {
     return (
-        <nav>
-            <a><span>Playground</span></a>
-            <ul>
-                <li>snapper</li>
-                <li>coditor</li>
-                <li>get involved</li>
+        <nav className={styles.nav}>
+            <a><p id='logo'>Playground</p></a>
+            <ul className="fr">
+                <li className="ml1"><a href="#">snapper</a></li>
+                <li className="ml1"><a href="#">coditor</a></li>
+                <li className="ml1"><a href="#">get involved</a></li>
+                <li className="ml1">Toggler</li>
             </ul>
         </nav>
     )
