@@ -1,13 +1,3 @@
-html,
-body {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    text-align: center;
-}
-
 :root {
   --primary-color : #3F5CC2;
   --success-color : #3FC27C;
@@ -16,6 +6,17 @@ body {
   --bg-1: #fff;
   --text-primary: #171717;
   --text-invert: #DEDEDE;
+}
+
+html,
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    text-align: center;
+    background-color: var(--bg-2);
 }
 
 a {

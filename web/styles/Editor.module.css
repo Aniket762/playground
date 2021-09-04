@@ -8,6 +8,11 @@
     border-radius: 0.3em;
 }
 
+.editor {
+    width: 95vw;
+    overflow: scroll;
+}
+
 .input_area:focus {
     outline: none !important;
     border: 1px solid #333;
