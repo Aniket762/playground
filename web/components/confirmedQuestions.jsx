@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function ConfirmedQuestions() {
-    const [questions,setQuestions]=useState([]);
+    const [questions, setQuestions] = useState([])
     useEffect(() => {
         try {
             axios.get('http://localhost:8080/api/questions').then(function (response) {
@@ -13,18 +13,19 @@ function ConfirmedQuestions() {
             console.log(err)
         }
     }, [])
-    console.log(questions);
+    console.log(questions)
     return (
         <div>
             <h1>Hello</h1>
             {questions.map(question => {
-                return (
-                <div key={question._id}>
-                    <h1 key={question._id}>{question.title}</h1>
-                </div>
-                )
-            })
-        }
+                if (question.isApproved == true) {
+                    return (
+                        <div key={question._id}>
+                            <h1 key={question._id}>{question.title}</h1>
+                        </div>
+                    )
+                }
+            })}
         </div>
     )
 }
