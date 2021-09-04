@@ -1,5 +1,9 @@
 .question {
-    width: 300px;
+    width: 350px;
     height: 120px;
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 0.2em;
 }

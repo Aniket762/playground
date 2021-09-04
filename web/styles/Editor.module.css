@@ -24,3 +24,8 @@
     border: 1px solid #333;
 }
 
+@media screen and (max-width: 1200px) {
+    .editor {
+        width: 40vw;
+    }
+}

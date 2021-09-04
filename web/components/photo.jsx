@@ -62,6 +62,17 @@ class Photo extends Component {
           <input id='code-file' className={styles.input_styles} type="file" onChange={this.onFileChange} name="photo" />
           <Btn darkText={true} onClick={this.onFileUpload}> 🦄 Upload!</Btn>
         </div>
+        <select
+          value={this.props.lang}
+          className={styles.lang_selector}
+          onChange={e => {
+              this.props.setLang(e.target.value)
+              console.log(e.target.value)
+          }}
+        >
+          <option value="cpp">C++</option>
+          <option value="py">Python</option>
+        </select>
         <Btn darkText={true} handleClick={this.props.handleSubmit}>
           {' '}
           🐥 Submit

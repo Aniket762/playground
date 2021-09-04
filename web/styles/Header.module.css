@@ -5,8 +5,20 @@
     align-items: center;
     width: 80%;
     margin: auto;
-    background-color: #ccc;
+    background-color: var(--bg-1);
     padding: 0 2em;
     height: 60px;
     margin-top: 2em;
+    position: relative;
+}
+
+.right {
+    margin-right: 2em;
+}
+
+.toggler {
+    height: 100%;
+    position: absolute;
+    right: 3%;
+    top: 25%;
 }

@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "dark-mode-toggle-animation": "^1.0.1",
     "next": "11.1.0",
     "next-pwa": "^5.3.1",
     "react": "17.0.2",
     "react-ace": "^9.4.3",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-toggle-dark-mode": "^1.0.4"
   },
   "devDependencies": {
     "@types/ace": "0.0.47",

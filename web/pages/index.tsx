@@ -12,6 +12,7 @@ import ConfirmedQuestions from '../components/confirmedQuestions'
 
 const Home: NextPage = () => {
     return (
+      <ThemeProvider>
         <div className={styles.container}>
             <Head>
                 <title>Playground</title>
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
             </Head>
       <Header />
       <main className={styles.main}>
-        <ThemeProvider>
+        
           <AwesomeHeading 
             heading={sectionData.coditor.heading} 
             description={sectionData.coditor.description} 
@@ -34,7 +35,6 @@ const Home: NextPage = () => {
             description={sectionData.questions.description} 
           />
           <ConfirmedQuestions />
-        </ThemeProvider>
       </main>
       
       <footer className={styles.footer}>
@@ -51,6 +51,7 @@ const Home: NextPage = () => {
         made with &#heart; by
       </footer>
     </div>
+    </ThemeProvider>
   );
 };
 

@@ -16,8 +16,7 @@ function ConfirmedQuestions() {
     }, [])
     console.log(questions)
     return (
-        <div className='questions'>
-            <h1>Hello</h1>
+        <div className='questions mt2'>
             <Question />
             <Question />
             <Question />

@@ -12,7 +12,6 @@ const Editor = () => {
     const [code, setCode] = useState('')
     const [output, setOutput] = useState('')
     const [lang, setLang] = useState('cpp')
-    const { theme, setTheme } = useTheme()
 
     useEffect(() => {
         try {
@@ -62,7 +61,7 @@ const Editor = () => {
             </div>
             
             <br />
-            <Photo handleSubmit={handleSubmit} />
+            <Photo lang={lang} setLang={setLang} handleSubmit={handleSubmit} />
             
             <h4>{output}</h4>
         </div>
