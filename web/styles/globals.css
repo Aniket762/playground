@@ -1,6 +1,6 @@
 :root {
   --primary-color : #3F5CC2;
-  --success-color : #056b2c;
+  --success-color : #00FF82;
   --bg-2 : #ECECEC;
   --bg-3: #E4E4E4;
   --bg-1: #fff;
@@ -105,7 +105,7 @@ header {
 
 .description {
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-secondary);
 }
 
@@ -132,5 +132,13 @@ header {
 @media screen and (max-width: 720px) {
   .hide-small-devices{
       display: none;
+  }
+
+  .xxl {
+    font-size: 2.4em;
+  }
+
+  #awesome-editor {
+    width: 75%;
   }
 }

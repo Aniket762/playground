@@ -9,8 +9,9 @@
 }
 
 .editor {
-    margin-top: 3em;
+    margin: 3em auto;
     width: 95vw;
+    border: 1px solid var(--text-primary);
 }
 
 @media screen and (min-width: 720px) {
@@ -26,6 +27,12 @@
 
 @media screen and (max-width: 1200px) {
     .editor {
-        width: 40vw;
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .editor {
+        width: 90vw;
     }
 }
