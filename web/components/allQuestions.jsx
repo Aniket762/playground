@@ -9,6 +9,17 @@ function passCheck() {
     }
 }
 
+function toApprove(id){
+    try {
+        axios.put(`http://localhost:8080/api/questions/moderator/${id}`,{ isApproved: 'true' }).then(function (response) {
+            // handle success
+            console.log(response)
+        })
+    } catch (err) {
+        console.log(err)
+    }
+}
+
 function Questions() {
     const [questions, setQuestions] = useState([])
 
@@ -31,6 +42,7 @@ function Questions() {
                 return (
                     <div key={question._id}>
                         <h1 key={question._id}>{question.title}</h1>
+                        <button onClick={toApprove(question._id)}>Approve</button>
                     </div>
                 )
             })}
