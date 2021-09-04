@@ -36,6 +36,7 @@ export const ThemeProvider = ({children}: Props)  => {
             "--text-secondary",
             palette[name].ts
         )
+        
         root.style.setProperty(
             "--bg-3",
             palette[name].bg_3

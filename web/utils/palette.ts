@@ -4,7 +4,7 @@ const palette = {
         ts: '#373737',
         bg_1: '#fff',
         bg_2: '#111',
-        bg_3: '#111',
+        bg_3: '#E4E4E4',
     },
     dark: {
         tp: '#eee',

@@ -16,12 +16,12 @@ const Navbar = () => {
             
             
             <a><p id='logo'>Playground</p></a>
-            <ul className="fr ${styles.right}">
-                <li className="ml1"><a href="#">snapper</a></li>
-                <li className="ml1"><a href="#">coditor</a></li>
-                <li className="ml1"><a href="#">get involved</a></li>
+            <ul className="fr">
+                <li className="ml1 hide-small-devices"><a href="#">snapper</a></li>
+                <li className="ml1 hide-small-devices"><a href="#">coditor</a></li>
+                <li className="ml1 hide-small-devices"><a href="#">get involved</a></li>
                 <li style={{width: '50px'}} className="ml1"></li>
-                <li className={`ml1 ${styles.toggler}`}>
+                <li className={`ml1 ${styles.toggler} show-small-devices`}>
                 <DarkModeSwitch
                     checked={theme === "dark"}
                     onChange={handleChange}
