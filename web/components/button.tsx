@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Button.module.css';
 
 interface Props {
-    handleClick ?: () => {};
+    handleClick ?: () => void;
     darkText: boolean;
 }
 

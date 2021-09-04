@@ -4,6 +4,7 @@ import Image from "next/image";
 import Editor from "../components/editor";
 import styles from "../styles/Home.module.css";
 import Photo from "../components/photo";
+import { ThemeProvider } from "../components/themeProvider";
 
 const Home: NextPage = () => {
   return (
@@ -17,10 +18,10 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Playground 🐣 </h1>
       </main>
-
-      <Editor />
-      <Photo/>
-
+      <ThemeProvider>
+        <Editor />
+        <Photo/>
+      </ThemeProvider>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/Editor.module.css'
 import axios from 'axios'
 import Btn from './button'
+import '../utils/toggle'
+import {useTheme} from './themeProvider';
 
 const Editor = () => {
     const [code, setCode] = useState('')
     const [output, setOutput] = useState('')
     const [lang, setLang] = useState('cpp')
+    const {theme, setTheme} = useTheme()
 
     useEffect(() => {
         try {
@@ -45,6 +48,14 @@ const Editor = () => {
     return (
         <div className={styles.main}>
             <div>
+                <h1>{theme}</h1>
+                <Btn 
+                    handleClick = {() => setTheme(theme === "dark" ? "light": "dark")}
+                    darkText={false} 
+                >
+                    ToggleDark
+                </Btn>
+                <br/>
                 <select
                     value={lang}
                     className={styles.lang_selector}
