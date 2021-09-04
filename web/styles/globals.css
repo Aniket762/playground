@@ -8,6 +8,12 @@
   --text-invert: #DEDEDE;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-size: 16px;
@@ -16,6 +22,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     text-align: center;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
@@ -35,4 +45,50 @@ a {
 .scrollmargin {
   height: 80px;
       text-align: center;
+}
+
+header {
+  width: 90%;
+}
+
+.fr {
+  display: flex;
+  flex-direction: row;
+}
+
+.ml1 {
+  margin-left: 1em;
+}
+
+#logo {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+#awesome-editor {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.description {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.mt1 {
+  margin-top: 1em;
+}
+
+.mt2 {
+  margin-top: 2em;
+}
+
+.xxl {
+  font-size: 3.5em;
 }

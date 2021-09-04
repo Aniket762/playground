@@ -5,6 +5,7 @@ import Btn from './button'
 import { useTheme } from './themeProvider'
 import EditorText from './editorText'
 import langModeMapper from '../utils/langModeMapper'
+import Photo from './photo'
 
 
 const Editor = () => {
@@ -49,45 +50,20 @@ const Editor = () => {
 
     return (
         <div className={styles.main}>
-            <div>
-                <Btn 
-                    handleClick = {() => setTheme(theme === "dark" ? "light": "dark")}
-                    darkText={false} 
-                >
-                    ToggleDark
-                </Btn>
-
-                <div className = {styles.editor}>
-                    <EditorText
-                        props = {{
-                            mode : langModeMapper[lang],
-                            
-                        }}
-                        code={code}
-                        setCode={setCode}
-                    />  
-                </div>
-                
-                <br/>
-                <select
-                    value={lang}
-                    className={styles.lang_selector}
-                    onChange={e => {
-                        setLang(e.target.value)
-                        console.log(e.target.value)
+            <div className = {styles.editor}>
+                <EditorText
+                    props = {{
+                        mode : langModeMapper[lang],
+                        
                     }}
-                >
-                    <option value="cpp">C++</option>
-                    <option value="py">Python</option>
-                </select>
+                    code={code}
+                    setCode={setCode}
+                />  
             </div>
+            
             <br />
-
-            <br />
-            <Btn darkText={true} handleClick={handleSubmit}>
-                {' '}
-                🐥 Submit
-            </Btn>
+            <Photo handleSubmit={handleSubmit} />
+            
             <h4>{output}</h4>
         </div>
     )

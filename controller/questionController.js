@@ -25,12 +25,13 @@ router.post('/', (req, res) => {
 })
 
 // update question
-router.put('moderator/:id', (req, res) => {
+router.put('/moderator/:id', (req, res) => {
     if (!ObjectId.isValid(req.params.id)) return res.status(400).send('No question with given Id: ' + res.params.id)
 
     var updateQuestion = {
         title: req.body.title,
         message: req.body.message,
+        isApproved: req.body.isApproved
     }
 
     question.findByIdAndUpdate(req.params.id, { $set: updateQuestion }, (err, response) => {
@@ -40,7 +41,7 @@ router.put('moderator/:id', (req, res) => {
 })
 
 // delete questions
-router.delete('moderator/:id', (req, res) => {
+router.delete('/moderator/:id', (req, res) => {
     if (!ObjectId.isValid(req.params.id)) return res.status(400).send('No question with given Id: ' + res.params.id)
     question.findByIdAndRemove(req.params.id, (err, response) => {
         if (!err) res.send(response)
