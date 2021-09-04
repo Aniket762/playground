@@ -1,9 +1,11 @@
-
-
+<p align='center'><img src='https://github.com/Aniket762/playground/blob/main/assets/playground-logo.png' width="300" ></p>
 <h1 align='center'> Playground</h1>
 <p align='center'>
 <img src='http://ForTheBadge.com/images/badges/built-by-developers.svg'>&nbsp;<img src='http://ForTheBadge.com/images/badges/built-with-love.svg'>
 </p>
+
+
+
 
 ## Inspiration 🧠
 
