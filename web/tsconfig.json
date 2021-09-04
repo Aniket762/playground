@@ -22,6 +22,6 @@
         "components/camera.jsx",
         "pages/_document.jsx",
         "pages/_offline.jsx"
-    ],
+, "components/allQuestions.jsx"    ],
     "exclude": ["node_modules"]
 }

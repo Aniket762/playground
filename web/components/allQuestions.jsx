@@ -17,6 +17,14 @@ function Questions() {
     return (
         <div>
             <h1>Hello</h1>
+            {questions.map(question => {
+                return (
+                <div key={question._id}>
+                    <h1 key={question._id}>{question.title}</h1>
+                </div>
+                )
+            })
+        }
         </div>
     )
 }
