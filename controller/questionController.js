@@ -14,10 +14,10 @@ router.get('/', (req, res, next) => {
 
 // post questions
 router.post('/', (req, res) => {
-    var newQuestion = {
+    var newQuestion = new question({
         title: req.body.title,
         message: req.body.message,
-    }
+    })
     newQuestion.save((err, response) => {
         if (!err) res.send(response)
         else console.log('Error while creating new question: ' + JSON.stringify(err, undefined, 2))
