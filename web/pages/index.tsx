@@ -8,7 +8,7 @@ import { ThemeProvider } from '../components/themeProvider'
 import Header from '../components/header'
 import AwesomeHeading from '../components/awesomeHeading'
 import sectionData from '../utils/sectionData'
-import Questions from '../components/questions'
+import ConfirmedQuestions from '../components/confirmedQuestions'
 
 const Home: NextPage = () => {
     return (
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
             heading={sectionData.questions.heading} 
             description={sectionData.questions.description} 
           />
-          <Questions />
+          <ConfirmedQuestions />
         </ThemeProvider>
       </main>
       

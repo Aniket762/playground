@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Question from './question'
 
 function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
@@ -15,9 +16,15 @@ function ConfirmedQuestions() {
     }, [])
     console.log(questions)
     return (
-        <div>
+        <div className='questions'>
             <h1>Hello</h1>
-            {questions.map(question => {
+            <Question />
+            <Question />
+            <Question />
+            <Question />
+            <Question />
+            <Question />
+            {/* {questions.map(question => {
                 if (question.isApproved == true) {
                     return (
                         <div key={question._id}>
@@ -25,7 +32,7 @@ function ConfirmedQuestions() {
                         </div>
                     )
                 }
-            })}
+            })} */}
         </div>
     )
 }
