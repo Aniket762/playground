@@ -129,6 +129,8 @@ Being a group of javascript developers, we tried our hands on typescript this ti
 - [ ] Mongoose
 - [ ] Google Cloud Platform
 - [ ] Google Vision API
+- [ ] Cloudinary
+- [ ] Scss
 
 
 ## What's next for Playground 🔥
