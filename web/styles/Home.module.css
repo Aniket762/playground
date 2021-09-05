@@ -61,3 +61,30 @@
         flex-direction: column;
     }
 }
+
+.formLogo {
+    width: 60%;
+}
+
+.formText {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.form {
+    text-align: center;
+}
+
+@media (min-width: 601px) {
+    .formText {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
