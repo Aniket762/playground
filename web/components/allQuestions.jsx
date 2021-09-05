@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styles from '../styles/Question.module.scss'
+import baseAddress from '../utils/baseAddress'
 
 function passCheck() {
     if (prompt('Please enter your password', '') == 'letmein') {
     } else {
         alert('Wrong Password')
-        window.location = 'http://localhost:3000/questionBank'
+        window.location = '${baseAddress}/questionBank'
     }
 }
 
 function toApprove(id) {
     try {
-        axios.put(`http://localhost:8080/api/questions/moderator/${id}`, { isApproved: 'true' }).then(function (response) {
+        axios.put(`${baseAddress}/api/questions/moderator/${id}`, { isApproved: 'true' }).then(function (response) {
             // handle success
             console.log(response)
-            window.location = 'http://localhost:3000/questionsPage'
+            window.location = `${baseAddress}/questionsPage`
         })
     } catch (err) {
         console.log(err)
@@ -28,7 +29,7 @@ function Questions() {
     useEffect(() => {
         passCheck()
         try {
-            axios.get('http://localhost:8080/api/questions').then(function (response) {
+            axios.get(`${baseAddress}/api/questions`).then(function (response) {
                 // handle success
                 setQuestions(response.data)
             })

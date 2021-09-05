@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styles from '../styles/Question.module.scss'
+import baseAddress from '../utils/baseAddress'
 
 function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
     useEffect(() => {
         try {
-            axios.get('http://localhost:8080/api/questions').then(function (response) {
+            axios.get(`${baseAddress}/api/questions`).then(function (response) {
                 // handle success
                 setQuestions(response.data)
             })
