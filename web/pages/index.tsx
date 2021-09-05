@@ -28,6 +28,7 @@ const Home: NextPage = () => {
                     <AwesomeHeading heading={sectionData.coditor.heading} description={sectionData.coditor.description} />
                     <Editor />
                     <AwesomeHeading heading={sectionData.questions.heading} description={sectionData.questions.description} />
+                    <a href="/form" className={styles.btn}>Contribute</a>
                     <ConfirmedQuestions />
                 </main>
                 <Footer />
