@@ -110,6 +110,7 @@ Replace the `<password>` section of the string with your Database Access passwor
 We used Next.js in the frontend and Node.js in the backend with MongoDB as our database. Next, we used the Google Vision API for scanning the image and retrieving the handwritten text. The handwritten text was displayed in a code editor with full syntax highlighting and available for currently two languages, c++ and python. When you click submit, we generated a new code file for the corresponding language and displayed it's output on the screen. For the second section of Playground, we created a form which adds data to the database. Then we retrieve the data through axios and display the questions that are approved. We created a special route with a passcode for admins, where they can manually approve the questions in the database.
 
 ## Challenges we ran into 🥺
+We faced numerours challenges throughout the journey. Firstly, we had to look for a good OCR model. We checked so many github repositories and packages but we couldn't find a one that had very high efficiency. So we finally decided to go with the Google Vision API in Google Cloud. But in Google Cloud, for getteing the API key, we needed credit card details and since none of had one, we had to borrow it from a friend which led us to our next challenge. We saw that while development, we had already used up so many requests and if we made the site live, the number of requests will increase because of which our friend might have to pay to Google Cloud. Since we wanted to remain in the free tier, we decided not to host the web application. Other than that we tried creating our very own compiler for the first time, which were initailly full of bugs and it took us a lot of time to fix them.
 
 ## Accomplishments that we're proud of 😎
 The biggest accomplishment for us was that we learned so many new things in just 2 days. We implemented OCR, TypeScript, Axios and API calls. We were able to overcome all the challenges and were able to create a completely functional prototype the way we had envisioned. Even though one of our teammates fell sick and wasn't able to contribute, we didn't lose hope and stayed up all night. It was tiring, but fun as well. I am most proud of the fact that this product will be able to help many teachers across the globe.
@@ -128,9 +129,12 @@ Being a group of javascript developers, we tried our hands on typescript this ti
 - [ ] Mongoose
 - [ ] Google Cloud Platform
 - [ ] Google Vision API
+- [ ] Cloudinary
+- [ ] Scss
 
 
 ## What's next for Playground 🔥
+Next, we want to increase the support by providing more options for languages like javascript, java, c and so on. We also want to increase the variety of questions varying through a variety of topics and difficulty levels. In addition to that, we plan to create a neural search framework that will allow us to filter the questions on the basis of topic and difficulty and help you find similar questions. Lastly, we wish to build our very own OCR model for text extraction. This will solve our problems of billing while using external models.
 
 <img src='https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/637/595/datas/full_width.png' />
 
