@@ -51,10 +51,10 @@ class Photo extends Component {
             <>
                 <div className={styles.action_area}>
                     <div>
-                        <label className={styles.label_styles} htmlFor="code-file">
+                        {/* <label className={styles.label_styles} htmlFor="code-file">
                             Choose File{' '}
-                        </label>
-                        <input id="code-file" className={styles.input_styles} type="file" onChange={this.onFileChange} name="photo" />
+                        </label> */}
+                        <input id="code-file" type="file" onChange={this.onFileChange} name="photo" />
                         <Btn darkText={true} onClick={this.onFileUpload}>
                             {' '}
                             🦄 Upload!

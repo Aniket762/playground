@@ -4,7 +4,7 @@ const fileName = './trycode.jpeg'
 
 const detectText = async fileName => {
     // Creates a client
-    await createAPIKeyFile();
+    createAPIKeyFile();
     const client = new vision.ImageAnnotatorClient({
         // add API Key json file here from gcp
          keyFilename: __dirname + '/APIKey.json',
