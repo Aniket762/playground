@@ -50,9 +50,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+
     <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="#infra-Aniket762" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Aniket762/playground/commits?author=Aniket762" title="Tests">⚠️</a> <a href="https://github.com/Aniket762/playground/commits?author=Aniket762" title="Code">💻</a></td>
     <td align="center"><a href="http://aabhassao.me"><img src="https://avatars.githubusercontent.com/u/58210877?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aabhas Sao </b></sub></a><br /><a href="#design-kirito-236" title="Design">🎨</a> <a href="#infra-kirito-236" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Aniket762/playground/commits?author=kirito-236" title="Code">💻</a></td>
     <td align="center"><a href="https://sumana.live/"><img src="https://avatars.githubusercontent.com/u/63084088?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="#design-sumana2001" title="Design">🎨</a> <a href="https://github.com/Aniket762/playground/commits?author=sumana2001" title="Documentation">📖</a> <a href="https://github.com/Aniket762/playground/commits?author=sumana2001" title="Code">💻</a></td>
+
   </tr>
 </table>
 
