@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Question from './question'
 import styles from '../styles/Question.module.css'
 
 function ConfirmedQuestions() {

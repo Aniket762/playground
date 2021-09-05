@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import styles from '../styles/Question.module.css'
 
 function passCheck() {
     if (prompt('Please enter your password', '') == 'letmein') {
@@ -9,11 +10,12 @@ function passCheck() {
     }
 }
 
-function toApprove(id){
+function toApprove(id) {
     try {
-        axios.put(`http://localhost:8080/api/questions/moderator/${id}`,{ isApproved: 'true' }).then(function (response) {
+        axios.put(`http://localhost:8080/api/questions/moderator/${id}`, { isApproved: 'true' }).then(function (response) {
             // handle success
             console.log(response)
+            window.location = 'http://localhost:3000/questionsPage'
         })
     } catch (err) {
         console.log(err)
@@ -34,14 +36,32 @@ function Questions() {
             console.log(err)
         }
     }, [])
-    console.log(questions)
     return (
-        <div>
+        <div className="questions mt2">
             {questions.map(question => {
                 return (
                     <div key={question._id}>
-                        <h1 key={question._id}>{question.title}</h1>
-                        <button onClick={toApprove(question._id)}>Approve</button>
+                        <article className={styles.question}>
+                            <div key={question._id} className={styles.questionContent}>
+                                <h1 className={styles.questionTitle} key={question._id}>
+                                    {question.title}
+                                </h1>
+                                <br />
+                                <p className={styles.questionMessage}>{question.message}</p>
+                                <br />
+                                {question.isApproved ? (
+                                    <button className={styles.btnSuccess} darkText={true}>
+                                        {' '}
+                                        ✅ Approved
+                                    </button>
+                                ) : (
+                                    <button className={styles.btnDanger} darkText={true} onClick={() => toApprove(question._id)}>
+                                        {' '}
+                                        🙋🏻 Approve
+                                    </button>
+                                )}
+                            </div>
+                        </article>
                     </div>
                 )
             })}

@@ -8,7 +8,7 @@ import { ThemeProvider } from '../components/themeProvider'
 function questionsPage() {
     return (
         <ThemeProvider>
-            <div style={{ backgroundColor: '#E4E4E4' }}>
+            <div>
                 <Head>
                     <title>Playground | All Questions</title>
                     <link rel="manifest" href="/manifest.json" />
