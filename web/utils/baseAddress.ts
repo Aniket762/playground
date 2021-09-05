@@ -1,2 +1,2 @@
-const baseAddress = 'https://playground-betaoverflow-2.herokuapp.com'
+const baseAddress = 'http://localhost:8080'
 export default baseAddress
