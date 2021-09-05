@@ -37,7 +37,6 @@ function Questions() {
     console.log(questions)
     return (
         <div>
-            <h1>Hello</h1>
             {questions.map(question => {
                 return (
                     <div key={question._id}>

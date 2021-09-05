@@ -3,7 +3,7 @@
     "short_name":"Playground",
     "icons":[
         {
-            "src":"/tinder-logo.png",
+            "src":"/playground-logo.png",
             "sizes":"512x512",
             "type":"image/png"
         }
