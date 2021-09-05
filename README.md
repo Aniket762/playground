@@ -134,6 +134,7 @@ Being a group of javascript developers, we tried our hands on typescript this ti
 
 
 ## What's next for Playground 🔥
+Next, we want to increase the support by providing more options for languages like javascript, java, c and so on. We also want to increase the variety of questions varying through a variety of topics and difficulty levels. In addition to that, we plan to create a neural search framework that will allow us to filter the questions on the basis of topic and difficulty and help you find similar questions. Lastly, we wish to build our very own OCR model for text extraction. This will solve our problems of billing while using external models.
 
 <img src='https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/637/595/datas/full_width.png' />
 
