@@ -58,14 +58,14 @@ const Form: React.FC = () => {
                             </Grid>
 
                             <TextField
-                                label="Title"
+                                label="Question"
                                 margin="normal"
                                 type="string"
                                 onChange={e => setTitle(e.target.value)}
                                 className={styles.formText}
                             />
                             <TextField
-                                label="Descp"
+                                label="Problem Statement"
                                 margin="normal"
                                 type="string"
                                 onChange={e => setMessage(e.target.value)}
