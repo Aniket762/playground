@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import Btn from './button'
 import styles from '../styles/Photo.module.scss'
+import baseAddress from '../utils/baseAddress'
 
 class Photo extends Component {
     state = {
@@ -20,7 +21,7 @@ class Photo extends Component {
             // Update the formData object
             formData.append('myFile', this.state.selectedFile, this.state.selectedFile.name)
             console.log(this.state.selectedFile)
-            axios.post('http://localhost:8080/add', formData)
+            axios.post(`${baseAddress}/add`, formData)
         } else {
             console.log('No file found')
         }

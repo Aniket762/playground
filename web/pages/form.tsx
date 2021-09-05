@@ -3,6 +3,7 @@ import { Grid, TextField, Button } from '@material-ui/core'
 import axios from 'axios'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import baseAddress from '../utils/baseAddress'
 
 async function handleSubmit(title: string, message: string) {
     const payload = JSON.stringify({
@@ -11,7 +12,7 @@ async function handleSubmit(title: string, message: string) {
     })
     console.log(title)
     try {
-        const { data } = await axios.post('http://localhost:8080/api/questions', payload, {
+        const { data } = await axios.post(`${baseAddress}/api/questions`, payload, {
             headers: { 'Content-Type': 'application/json' },
         })
         console.log(message)

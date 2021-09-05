@@ -6,7 +6,7 @@ function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
     useEffect(() => {
         try {
-            axios.get('http://localhost:8080/api/questions').then(function (response) {
+            axios.get(`${baseAddress}/api/questions`).then(function (response) {
                 // handle success
                 setQuestions(response.data)
             })

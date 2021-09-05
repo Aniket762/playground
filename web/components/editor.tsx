@@ -6,6 +6,7 @@ import { useTheme } from './themeProvider'
 import EditorText from './editorText'
 import langModeMapper from '../utils/langModeMapper'
 import Photo from './photo'
+import baseAddress from '../utils/baseAddress'
 
 const Editor = () => {
     const [code, setCode] = useState('')
@@ -14,7 +15,7 @@ const Editor = () => {
 
     useEffect(() => {
         try {
-            axios.get('http://localhost:8080/code').then(function (response) {
+            axios.get(`${baseAddress}/code`).then(function (response) {
                 // handle success
                 // console.log(response.data.code)
                 setCode(response.data.code)
@@ -31,7 +32,7 @@ const Editor = () => {
         })
 
         try {
-            const { data } = await axios.post('http://localhost:8080/run', payload, {
+            const { data } = await axios.post(`${baseAddress}/run`, payload, {
                 headers: { 'Content-Type': 'application/json' },
             })
             setOutput(data.output)
