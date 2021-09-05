@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styles from '../styles/Question.module.scss'
+import baseAddress from '../utils/baseAddress'
 
 function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
