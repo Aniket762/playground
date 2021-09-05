@@ -15,7 +15,7 @@ type Props = {
 }
 
 export const ThemeProvider = ({children}: Props)  => {
-    const [theme, setTheme] = useState<ThemeName>("light");
+    const [theme, setTheme] = useState<ThemeName>("dark");
 
     useEffect(() => {
         const darkOS = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -42,7 +42,7 @@ export const ThemeProvider = ({children}: Props)  => {
             palette[name].bg_3
         )
 
-        document.getElementById('selector')?.classList.toggle('invert');
+        // document.getElementById('selector')?.classList.toggle('invert');
 
         setTheme(name);
     }

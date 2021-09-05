@@ -1,0 +1,1 @@
+fruits = ["banana", "apple", "orange", "strawberry"]
