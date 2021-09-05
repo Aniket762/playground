@@ -42,6 +42,8 @@ export const ThemeProvider = ({children}: Props)  => {
             palette[name].bg_3
         )
 
+        document.getElementById('selector')?.classList.toggle('invert');
+
         setTheme(name);
     }
 

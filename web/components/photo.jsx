@@ -63,6 +63,7 @@ class Photo extends Component {
           <Btn darkText={true} onClick={this.onFileUpload}> 🦄 Upload!</Btn>
         </div>
         <select
+          id='selector'
           value={this.props.lang}
           className={styles.lang_selector}
           onChange={e => {

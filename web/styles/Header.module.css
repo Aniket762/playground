@@ -17,6 +17,12 @@
 .toggler {
     height: 100%;
     position: absolute;
-    right: 3%;
+    right: 5%;
     top: 25%;
+}
+
+@media screen and (max-width: 640px) {
+    .nav {
+        width: 100%;
+    }
 }
