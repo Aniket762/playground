@@ -118,7 +118,17 @@ The biggest accomplishment for us was that we learned so many new things in just
 Being a group of javascript developers, we tried our hands on typescript this time. We learnt how to use Next.js and implement it with TypeScript and SCSS. Moreover, we created a progressive web app with offline support as well. As we wanted to read the handwritten text, we found out about OCR for text extraction. We researched on it and finally decided to try out the Google Vision API which was something very new for us.
 
 ## Built With 💕
-- [ ] Nextjs
+- [ ] React
+- [ ] Nextjs 
+- [ ] Nodejs
+- [ ] Javascript
+- [ ] Express
+- [ ] Typescript
+- [ ] MongoDB
+- [ ] Mongoose
+- [ ] Google Cloud Platform
+- [ ] Google Vision API
+
 
 ## What's next for Playground 🔥
 
