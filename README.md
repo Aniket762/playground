@@ -1,5 +1,5 @@
 
-<p align='center'><img src='https://github.com/Aniket762/playground/blob/main/assets/playground-logo.png' width="300" ></p>
+<p align='center'><img src='https://res.cloudinary.com/dqlh4eyt8/image/upload/v1630815038/playground-logo_1_jrjppd.png' width="150" ></p>
 <h1 align='center'> Playground</h1>
 <p align='center'>
 Evaluation of answer sheets of the exams conducted traditionally is a tedious and critical task. A lot of time and energy is invested by the teachers to check every single line of code, look for bugs and find the corresponding output. So, with Playground, you can simply upload a picture of a student's handwritten code and we will handle the rest. Using Google's Vision API, we scan the image and retrieve the text and give it back to you in a code editor. But unlike teachers, machines are not always right, so if some minor flaws are there you can edit them in the code editor, which will then run the code and give you the output. So instead of going through the entire code, use Playground to do it in a min.
