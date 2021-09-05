@@ -1,22 +1,27 @@
 .question {
     width: 350px;
-    height: 250px;
+    height: 200px;
     background-color: var(--bg-1);
     margin: 1em;
     padding: 1em;
-    border: 1px solid #000;
     border-radius: 0.2em;
     overflow: auto;
     text-align: justify;
+    border-radius: 10px;
+    border: solid 2px #fff;
 }
 
 .questionContent {
     text-align: center;
     margin: 0 auto;
+    display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .questionMessage {
     text-align: center;
+    
 }
 
 .btnSuccess {

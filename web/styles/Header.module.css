@@ -12,11 +12,15 @@
     position: relative;
 }
 
-
-
 .toggler {
     height: 100%;
     position: absolute;
     right: 3%;
     top: 25%;
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        width: 95%;
+    }
 }
