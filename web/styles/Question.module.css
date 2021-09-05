@@ -6,4 +6,15 @@
     padding: 1em;
     border: 1px solid #000;
     border-radius: 0.2em;
+    overflow: auto;
+    text-align: justify;
+}
+
+.questionContent {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.questionMessage {
+    text-align: center;
 }

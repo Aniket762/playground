@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Question from './question'
+import styles from '../styles/Question.module.css'
 
 function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
@@ -16,22 +17,22 @@ function ConfirmedQuestions() {
     }, [])
     console.log(questions)
     return (
-        <div className='questions mt2'>
-            <Question />
-            <Question />
-            <Question />
-            <Question />
-            <Question />
-            <Question />
-            {/* {questions.map(question => {
+        <div className="questions mt2">
+            {questions.map(question => {
                 if (question.isApproved == true) {
                     return (
-                        <div key={question._id}>
-                            <h1 key={question._id}>{question.title}</h1>
-                        </div>
+                        <article className={styles.question}>
+                            <div key={question._id} className={styles.questionContent}>
+                                <h1 className={styles.questionTitle} key={question._id}>
+                                    {question.title}
+                                </h1>
+                                <br />
+                                <p className={styles.questionMessage}>{question.message}</p>
+                            </div>
+                        </article>
                     )
                 }
-            })} */}
+            })}
         </div>
     )
 }
