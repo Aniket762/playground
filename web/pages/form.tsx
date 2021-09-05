@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Grid, TextField, Button } from '@material-ui/core'
 import axios from 'axios'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 async function handleSubmit(title: string, message: string) {
     const payload = JSON.stringify({

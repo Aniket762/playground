@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react'
-import styles from '../styles/Editor.module.css'
+import styles from '../styles/Editor.module.scss'
 import axios from 'axios'
 import Btn from './button'
 import { useTheme } from './themeProvider'
 import EditorText from './editorText'
 import langModeMapper from '../utils/langModeMapper'
 import Photo from './photo'
-
 
 const Editor = () => {
     const [code, setCode] = useState('')
@@ -49,17 +48,16 @@ const Editor = () => {
 
     return (
         <div className={styles.main}>
-            <div className = {styles.editor}>
+            <div className={styles.editor}>
                 <EditorText
-                    props = {{
-                        mode : langModeMapper[lang],
-                        
+                    props={{
+                        mode: langModeMapper[lang],
                     }}
                     code={code}
                     setCode={setCode}
-                />  
+                />
             </div>
-            
+
             <br />
             <Photo lang={lang} setLang={setLang} handleSubmit={handleSubmit} />
             
