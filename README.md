@@ -2,14 +2,10 @@
 <p align='center'><img src='https://res.cloudinary.com/dqlh4eyt8/image/upload/v1630815038/playground-logo_1_jrjppd.png' width="150" ></p>
 <h1 align='center'> Playground</h1>
 <p align='center'>
-Evaluation of answer sheets of the exams conducted traditionally is a tedious and critical task. A lot of time and energy is invested by the teachers to check every single line of code, look for bugs and find the corresponding output. So, with Playground, you can simply upload a picture of a student's handwritten code and we will handle the rest. Using Google's Vision API, we scan the image and retrieve the text and give it back to you in a code editor. But unlike teachers, machines are not always right, so if some minor flaws are there you can edit them in the code editor, which will then run the code and give you the output. So instead of going through the entire code, use Playground to do it in a min.
+In India, more than 95% of schools don't allow smartphones in class. Being a Computer Science teacher becomes very difficult as it is nearly impossible to check the handwritten code of each student line by line. Also talking in India, in most schools, the students don't have the privilege to have one computer each for them so that they can run their code on their own. So it becomes a nightmare for the teacher as they might have to manually type each code of each student and run it or take the risk of missing out on bugs. So we came up with Playground to make this job easier. Another reason for creating Playground was that once we entered college we understood the importance of coding. Coding not only helps you in a Software job but also helps increase logical reasoning and problem-solving ability. But many students don't have the chance of coding till they reach college. Why? Because there are so many students in India who can not afford a laptop or computer. So we decided to build a progressive web app because in today's world almost everyone uses a phone. Now they can start coding early and learn from online teachers. <br/> <br/>
+In addition to that, we conducted a survey among our teachers where we found that teachers give more than 40% of their time to creating questions for various class tests, assignments and exams. So this teacher's day, we wanted to help them out. For this, we came up with crowdsourcing question bank idea. Anyone across the world can now help teachers make questions. <br/> <strong>By everyone, for teachers!❤</strong>
 </p>
 <img width="1327" alt="playground user interface" src="https://user-images.githubusercontent.com/67703407/132119834-68cd31ee-179a-4cff-80b1-d2979fb87146.png">
-
-
-## Inspiration 🧠
-### "The influence of a good teacher can never be erased and without teachers, life would have no class"
-On this teachers' day, we wanted to thank all our teachers by bringing to them Playground. The playground is a web application to make life easier for our Computer Science teachers.
 
 ## What is it? ⛹️‍♂️
 There are two subsystems of the Playground:
