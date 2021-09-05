@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from './navbar';
-import styles from '../styles/Header.module.css';
+import React from 'react'
+import Navbar from './navbar'
+import styles from '../styles/Header.module.scss'
 
 const Header = () => {
     return (
         <header>
-            <Navbar  />
+            <Navbar />
         </header>
     )
 }

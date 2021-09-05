@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import styles from '../styles/Question.module.css'
+import styles from '../styles/Question.module.scss'
 
 function ConfirmedQuestions() {
     const [questions, setQuestions] = useState([])
