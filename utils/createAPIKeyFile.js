@@ -15,8 +15,7 @@ const createAPIKeyFile = () => {
   }
 
   const data = JSON.stringify(obj);
-  const file = fs.writeFileSync('./utils/APIkey.json', data);
-  console.log(file);
+  fs.writeFileSync('./utils/APIKey.json', data);
 }
 
 module.exports = { createAPIKeyFile };
