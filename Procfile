@@ -1,0 +1,1 @@
+web: ./lib/server npm start
