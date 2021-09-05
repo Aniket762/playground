@@ -63,7 +63,9 @@ const Editor = () => {
             <br />
             <Photo lang={lang} setLang={setLang} handleSubmit={handleSubmit} />
             
-            <h4>{output}</h4>
+            <div className='output'>
+                <h4 className='output-res'>{output}</h4>
+            </div>
         </div>
     )
 }

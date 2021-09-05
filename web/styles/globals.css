@@ -170,6 +170,16 @@ select {
     flex-wrap: wrap;
 }
 
+.output {
+    margin-top: 1em;
+    background-color: var(--bg-1);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-primary);
+}
+
 @media screen and (max-width: 720px) {
     .hide-small-devices {
         display: none;
