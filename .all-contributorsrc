@@ -26,6 +26,17 @@
         "infra",
         "code"
       ]
+    },
+    {
+      "login": "sumana2001",
+      "name": "Sumana Basu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63084088?v=4",
+      "profile": "https://sumana.live/",
+      "contributions": [
+        "design",
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
