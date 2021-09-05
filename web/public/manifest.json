@@ -6,12 +6,19 @@
             "src":"/playground-logo.png",
             "sizes":"512x512",
             "type":"image/png"
-        }
+        },
+        {
+            "src": "/playground-logo.png",
+            "sizes": "178x178",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
     ],
     "theme_color":"#ffffff",
     "background_color":"#ffffff",
     "start_url":"/",
     "scope":"/",
     "display":"standalone",
-    "orientation":"portrait"
+    "orientation":"portrait",
+    "description": "Playground for teachers and coders"
 }
