@@ -1,5 +1,5 @@
 const vision = require('@google-cloud/vision')
-const { default: createAPIKeyFile } = require('./createAPIKeyFile')
+const { createAPIKeyFile } = require('./createAPIKeyFile')
 const fileName = './trycode.jpeg'
 
 const detectText = async fileName => {

@@ -17,4 +17,4 @@ const createAPIKeyFile = () => {
   fs.writeFileSync('APIkey.json', data);
 }
 
-export default createAPIKeyFile;
+module.exports = { createAPIKeyFile };
