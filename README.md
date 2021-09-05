@@ -103,6 +103,7 @@ We used Next.js in the frontend and Node.js in the backend with MongoDB as our d
 ## Accomplishments that we're proud of 😎
 
 ## What we learned 🤓
+Being a group of javascript developers, we tried our hands on typescript this time. We learnt how to use Next.js and implement it with TypeScript and SCSS. Moreover, we created a progressive web app with offline support as well. As we wanted to read the handwritten text, we found out about OCR for text extraction. We researched on it and finally decided to try out the Google Vision API which was something very new for us.
 
 ## Built With 💕
 - [ ] Nextjs
