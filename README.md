@@ -1,7 +1,5 @@
 <p align='center'><img src='https://github.com/Aniket762/playground/blob/main/assets/playground-logo.png' width="300" ></p>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <h1 align='center'> Playground</h1>
 <p align='center'>
 <img src='http://ForTheBadge.com/images/badges/built-by-developers.svg'>&nbsp;<img src='http://ForTheBadge.com/images/badges/built-with-love.svg'>
@@ -41,9 +39,7 @@ Your appreciation makes us grow and glow up. ⭐
 
 
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Team ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
