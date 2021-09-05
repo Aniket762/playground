@@ -128,6 +128,8 @@ Being a group of javascript developers, we tried our hands on typescript this ti
 - [ ] Google Vision API
 - [ ] Cloudinary
 - [ ] Scss
+- [ ] Vercel
+- [ ] Heroku
 
 
 ## What's next for Playground 🔥
