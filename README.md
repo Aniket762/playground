@@ -105,8 +105,7 @@ We used Next.js in the frontend and Node.js in the backend with MongoDB as our d
 ## What we learned 🤓
 
 ## Built With 💕
-
-
+- [ ] Nextjs
 
 ## What's next for Playground 🔥
 
