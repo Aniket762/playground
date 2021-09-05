@@ -41,7 +41,7 @@ function Questions() {
             {questions.map(question => {
                 return (
                     <div key={question._id}>
-                        <article className={styles.question}>
+                        <article className={styles.question} style={{height:"250px"}}>
                             <div key={question._id} className={styles.questionContent}>
                                 <h1 className={styles.questionTitle} key={question._id}>
                                     {question.title}
