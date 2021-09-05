@@ -10,6 +10,7 @@ import AwesomeHeading from '../components/awesomeHeading'
 import sectionData from '../utils/sectionData'
 import ConfirmedQuestions from '../components/confirmedQuestions'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
     return (
@@ -28,7 +29,11 @@ const Home: NextPage = () => {
                     <AwesomeHeading heading={sectionData.coditor.heading} description={sectionData.coditor.description} />
                     <Editor />
                     <AwesomeHeading heading={sectionData.questions.heading} description={sectionData.questions.description} />
-                    <a href="/form" className={styles.btn}>Contribute</a>
+                    <div className={styles.btn}>
+                    <Link href="/form">
+                   Contribute
+                    </Link>
+                    </div>
                     <ConfirmedQuestions />
                 </main>
                 <Footer />
