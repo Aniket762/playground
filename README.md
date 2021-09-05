@@ -1,9 +1,9 @@
 <p align='center'><img src='https://github.com/Aniket762/playground/blob/main/assets/playground-logo.png' width="300" ></p>
-
 <h1 align='center'> Playground</h1>
 <p align='center'>
 <img src='http://ForTheBadge.com/images/badges/built-by-developers.svg'>&nbsp;<img src='http://ForTheBadge.com/images/badges/built-with-love.svg'>
 </p>
+<img src='https://s3.amazonaws.com/organizer.mlh.io/8sadafvy2nx1gxYWa94VTqvq?response-content-disposition=inline%3B%20filename%3D%22teachers-hacks_slideshow.png%22%3B%20filename%2A%3DUTF-8%27%27teachers-hacks_slideshow.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJFCF2ZS25I2RWYBQ%2F20210905%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210905T061246Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9eec2f682c6643e868e07ed7c556bbcc82ed4a9f2ef9dcffc52b9f3230027f59' />
 
 
 
@@ -124,3 +124,6 @@ Being a group of javascript developers, we tried our hands on typescript this ti
     <td align="center"><a href="https://sumana.live/"><img src="https://avatars.githubusercontent.com/u/63084088?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="#design-sumana2001" title="Design">🎨</a> <a href="https://github.com/Aniket762/playground/commits?author=sumana2001" title="Documentation">📖</a> <a href="https://github.com/Aniket762/playground/commits?author=sumana2001" title="Code">💻</a></td>
   </tr>
 </table>
+
+
+
