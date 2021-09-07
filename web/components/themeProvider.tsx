@@ -15,7 +15,7 @@ type Props = {
 }
 
 export const ThemeProvider = ({children}: Props)  => {
-    const [theme, setTheme] = useState<ThemeName>("dark");
+    const [theme, setTheme] = useState<ThemeName>("light");
 
     useEffect(() => {
         const darkOS = window.matchMedia("(prefers-color-scheme: dark)").matches;
