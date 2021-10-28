@@ -3,7 +3,7 @@ const fs = require('fs')
 const createAPIKeyFile = () => {
   const obj = {
     "type": "service_account",
-    "project_id": "cool-snowfall-324918",
+    "project_id": "dazzling-seat-293205",
     "private_key_id": process.env.PRIVATE_KEY_ID,
     "private_key": process.env.PRIVATE_KEY,
     "client_email": process.env.CLIENT_EMAIL,
