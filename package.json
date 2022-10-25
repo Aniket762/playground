@@ -23,7 +23,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/node": "16.11.6",
+    "@types/node": "18.11.5",
     "nodemon": "^2.0.12"
   },
   "engines": {
